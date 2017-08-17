@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBAction func tapTestButton(_ sender: Any) {
         print("\n------begin------")
         usleep(5000*1000)
-        print("------end--------\n")
+        print("\n\n\n------end--------\n")
     }
 
     override func didReceiveMemoryWarning() {
