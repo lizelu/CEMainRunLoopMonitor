@@ -60,7 +60,8 @@ class CEMainRunLoopMonitor {
             print("beforeTimers -- 处理Timer之前")
             
         case CFRunLoopActivity.beforeWaiting:
-            print("beforeWaiting -- 即将等待 time = \( NSDate().timeIntervalSince1970 - waitAfterCurrentTime)")
+            let timeInterval = NSDate().timeIntervalSince1970 - waitAfterCurrentTime
+            print("beforeWaiting -- 即将等待 time = \(timeInterval)")
             
         case CFRunLoopActivity.afterWaiting:
             print("afterWaiting -- 等待之后")
